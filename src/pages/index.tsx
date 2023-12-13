@@ -1,33 +1,20 @@
-import React from "react";
 import {
+  Alert,
   Card,
-  Stack,
-  Text,
-  Heading,
-  Button,
-  CarrierLogo,
-  Itinerary,
-  ItinerarySegment,
-  ItinerarySegmentDetail,
-  TimelineStep,
-    Box,
+  CardSection,
+  Illustration
 } from "@kiwicom/orbit-components";
-import styled from "styled-components";
-import Image from "next/image";
-import thailandImg from "../img/thailand.jpeg";
-import Trip from "../components/Trip";
-import Header from "../components/Header";
 
 const MyTripCard = () => {
   return (
-    <div style={{ width: '400px', margin: 'auto', padding: '2em'}}>
-    <Card>
-      <Stack direction="column">
-        <Header />
-        <Trip />
-        <Button>Show itinerary details</Button>
-      </Stack>
-    </Card>
+    <div style={{ width: "400px", margin: "auto", padding: "2em" }}>
+      <Alert type="success" spaceAfter="large">
+        It Works!
+      </Alert>
+      <Illustration name="Success" />
+      <Card>
+        <CardSection>Hello World!</CardSection>
+      </Card>
     </div>
   );
 };
