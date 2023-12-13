@@ -2,7 +2,7 @@ import {
   Alert,
   Card,
   CardSection,
-  Illustration
+  Illustration,
 } from "@kiwicom/orbit-components";
 
 const MyTripCard = () => {
@@ -15,6 +15,14 @@ const MyTripCard = () => {
       <Card>
         <CardSection>Hello World!</CardSection>
       </Card>
+      <div className="bg-gray-200 p-4 flex justify-between items-center">
+        <button className="text-indigo-600 hover:text-indigo-800">
+          Show itinerary details
+        </button>
+        <button className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-800">
+          Check-in
+        </button>
+      </div>
     </div>
   );
 };

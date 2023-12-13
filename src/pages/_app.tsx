@@ -1,6 +1,8 @@
 import { OrbitProvider, getTokens } from "@kiwicom/orbit-components";
 import { useId } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
+import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
 
 const GlobalStyle = createGlobalStyle`
   body {
